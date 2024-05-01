@@ -2,7 +2,7 @@
     font-family: "Poppins", sans-serif;
 }
 .carrito {
-color: white;
+  color: white;
   background-color: #9d0376;
   min-height: 3rem;
   max-height: 3rem;
@@ -11,11 +11,11 @@ color: white;
   overflow: hidden; 
 }
 .carrito-lista {
+    width: 100%;
     max-height: 300px; 
     overflow-y: auto;
     scrollbar-width: none;
-    background-color: #fe892c
-    ;
+    background-color: #fe892c;
 }
 img{
 
@@ -29,7 +29,7 @@ img{
     height: 100vh;
     background-size: cover;
     background-position: center;
-    background-image: url("/img/pexels-lastly-699122.jpg");
+    background-image: url("img/pexels-lastly-699122.jpg");
     z-index: 0;
     position: relative;
 }
@@ -79,3 +79,13 @@ h2{
 .carrito-lista ul li img{
     width: 50px;
 }
+
+@media (max-width: 768px) {
+   h1{
+    font-size: 4.5rem;
+   }
+   h2{
+    text-align: center;
+    font-size: 1.2rem;
+    }
+  }

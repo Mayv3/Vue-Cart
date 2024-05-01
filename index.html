@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="/img/computer-laptop-icon.svg">
+  <link rel="icon" href="img/computer-laptop-icon.svg">
 </head>
 <body>
   <main>
@@ -25,13 +25,13 @@
     </div>
     <div id="app" class="container-fluid p-5">
       <div class="carrito d-flex justify-content-end fixed-top p-0">
-        <div class="d-flex gap-3 justify-content-center">
+        <div class="d-flex gap-3 justify-content-center width100carrito">
           <div class=" d-flex align-items-center justify-content-between gap-3 px-5">
             <span v-if="!mostrarCarrito" class="m-0 p-0">{{productosCarrito.length}}</span>
             <img src="icons8-cart-100.png" v-if="!mostrarCarrito" @click="toggleCarrito" alt="Carrito Icono" class="img-cart">
           </div>
         </div>
-        <div v-if="mostrarCarrito" class=" text-center w-25 h-100 carrito-container ">
+        <div v-if="mostrarCarrito" class=" text-center w-25 h-100 carrito-container">
           <div class="d-flex align-items-center justify-content-between p-2">
             <p class="p-0 m-0 fs-5">Total: ${{ total.toFixed(2) }}</p>
             <button @click="toggleCarrito" class="btn-close btn-close-white btn-sm float-end mt-2 me-2"></button>
@@ -51,7 +51,7 @@
         </div>
       </div>
       <div class="container">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="row gy-4">
           <div v-for="(producto, index) in productos" :key="index" class="col">
             <div class="card border-0">
               <img :src="producto.imagen" class="card-img-top" :alt="producto.nombre">
@@ -68,6 +68,6 @@
   </main>
  
   <script src="https://unpkg.com/vue@3"></script>
-  <script src="/js/carrito.js"></script>
+  <script src="js/carrito.js"></script>
 </body>
 </html>
