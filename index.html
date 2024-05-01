@@ -15,14 +15,16 @@
 </head>
 <body>
   <main>
+
     <div class="section1 d-flex justify-content-center align-items-center text-white">
       <div class="containerTittle d-flex justify-content-center align-items-center flex-column">
         <h1>TataSHOP</h1>
         <h2>La mejor Tienda de Venta de Moviles en Argentina</h2>
         <p>Contamos con los mejores dispositivos moviles del mercado, garantizando una calidad en su excelencia</p>
-        <a href="#productos" class="text-white btn btn-danger">Descubrir</a>
+        <a href="#app" class="text-white btn btn-danger">Descubrir</a>
       </div>
     </div>
+
     <div id="app" class="container-fluid p-5">
       <div class="carrito d-flex justify-content-end fixed-top p-0">
         <div class="d-flex gap-3 justify-content-center width100carrito">
@@ -36,8 +38,6 @@
             <p class="p-0 m-0 fs-5">Total: ${{ total.toFixed(2) }}</p>
             <button @click="toggleCarrito" class="btn-close btn-close-white btn-sm float-end mt-2 me-2"></button>
           </div>
-          
-          
           <div class="carrito-lista">
             <ul class="list-group listaCarrito p-0 m-0 rounded-1 w-100">
               <li v-if="productosCarrito.length === 0" class="list-group-item text-center rounded-0">El carrito esta vacío</li>
