@@ -1,0 +1,37 @@
+{
+  "message": "GET Data",
+  "data": {
+    "productos": [
+      {
+        "nombre": "iPhone 13",
+        "precio": 999.00,
+        "imagen": "https://i.blogs.es/a425ef/analisis-iphone-13-y-iphone-13-mini-applesfera--01/1366_2000.jpeg"
+      },
+      {
+        "nombre": "Samsung Galaxy S21",
+        "precio": 899.99,
+        "imagen": "https://cnnespanol.cnn.com/wp-content/uploads/2021/02/Galaxy-S21-Plus-promos.jpg?quality=100&strip=info"
+      },
+      {
+        "nombre": "Google Pixel 6",
+        "precio": 699.00,
+        "imagen": "https://i.blogs.es/a96630/google-pixel-30/840_560.jpg"
+      },
+      {
+        "nombre": "OnePlus 9",
+        "precio": 749.00,
+        "imagen": "https://i.blogs.es/0678f8/img_8551/1366_2000.jpg"
+      },
+      {
+        "nombre": "Xiaomi Mi 11",
+        "precio": 599.00,
+        "imagen": "https://i.blogs.es/87ef6d/mi11-ultra-8/1366_2000.jpg"
+      },
+      {
+        "nombre": "Huawei P40 Pro",
+        "precio": 899.00,
+        "imagen": "https://www.digitaltrends.com/wp-content/uploads/2020/05/huawei-p40-pro-rear-jacket.jpg?fit=1500%2C1000&p=1"
+      }
+    ]
+  }
+}
